@@ -1,3 +1,8 @@
 ﻿  FBullCowGame.cpp
-c:\users\thomas\documents\unrealcourse\bullcowgame\bullcowgame\fbullcowgame.cpp(54): warning C4267: 'initializing': conversion from 'size_t' to 'int32', possible loss of data
+c:\users\thomas\documents\unrealcourse\bullcowgame\bullcowgame\fbullcowgame.cpp(25): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\thomas\documents\unrealcourse\bullcowgame\bullcowgame\fbullcowgame.cpp(36): warning C4267: 'return': conversion from 'size_t' to 'int32', possible loss of data
+c:\users\thomas\documents\unrealcourse\bullcowgame\bullcowgame\fbullcowgame.cpp(86): warning C4267: 'initializing': conversion from 'size_t' to 'int32', possible loss of data
+  main.cpp
+  Generating Code...
+c:\users\thomas\documents\unrealcourse\bullcowgame\bullcowgame\fbullcowgame.cpp(159): warning C4715: 'FBullCowGame::IsLowercase': not all control paths return a value
   BullCowGame.vcxproj -> C:\Users\thomas\Documents\UnrealCourse\BullCowGame\x64\Debug\BullCowGame.exe

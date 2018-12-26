@@ -11,6 +11,16 @@ struct FBullCowCount
 	int32 Cows = 0;
 };
 
+// Custom Error lists
+enum class EGuessStatus
+{
+	Invalid,
+	OK,
+	Not_Isogram,
+	Wrong_Length,
+	Not_Lowercase
+};
+
 // Class
 class FBullCowGame
 {
@@ -19,14 +29,17 @@ public:
 
 	int32 GetMaxTries() const;
 	int32 GetCurrentTry() const;
+	int32 GetHiddenWordLength() const;
 	bool IsGameWon() const;
+	EGuessStatus CheckGuessValidity(FString) const; // TODO make a more rich return value.
 
-	void Reset(); // TODO make a more rich return value.
-	bool CheckGuessValidity(FString); // TODO make a more rich return value.
-	FBullCowCount SubmitGuess(FString);
+	void Reset(); // TODO make a more rich return value.	
+	FBullCowCount SubmitValidGuess(FString);
 
 private:
 	int32 MyCurrentTry;
-	int32 MyMaxTries;
 	FString MyHiddenWord;
+	bool bGameIsWon;
+	bool IsIsogram(FString) const;
+	bool IsLowercase(FString) const;
 };
